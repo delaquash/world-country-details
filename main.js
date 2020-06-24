@@ -31,9 +31,12 @@ function displayCountries(countries) {
         countriesEl.appendChild(countryEl);
     });
 }
+
+// toggle theme - dark & light
 toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
+// show and hide the filters (li tags)
 filterBtn.addEventListener('click', () => {
     filterBtn.classList.toggle('open');
 });

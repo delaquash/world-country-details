@@ -56,18 +56,18 @@ h1 {
     cursor: pointer;
     /* margin: 4px; */
     /* padding: 4px; */
-    width: 150px;
+    width: 120px;
 }
 
 .btn-toggle .fas {
     display: none;
 }
 
-body .dark .btn-toggle .fas {
+body.dark .btn-toggle .fas {
     display: inline-block;
 }
 
-body .dark .btn-toggle .far {
+body.dark .btn-toggle .far {
     display: none;
 }
 
@@ -106,21 +106,26 @@ body .dark .btn-toggle .far {
 
 .dropdown ul {
     position: absolute;
+    background-color: var(--background-el);
+    list-style-type: none;
     display: none;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.12);
     left: 0;
     top: 100%;
-    list-style: none;
+    z-index: 99;
+}
+
+dropdown.open ul {
+    display: block;
 }
 
 .dropdown ul li {
     margin: 5px 0;
 }
 
-.dropdown .fa-chevron-down {
+.dropdown.fa-chevron-down {
     margin-left: 10px;
 }
 
@@ -147,7 +152,4 @@ body .dark .btn-toggle .far {
 
 .container.countries {
     justify-content: center;
-}
-
-
 }
