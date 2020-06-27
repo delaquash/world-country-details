@@ -8,7 +8,6 @@ getCountries();
 async function getCountries() {
     const res = await fetch('https://restcountries.eu/rest/v2/all');
     const countries = await res.json();
-
     displayCountries(countries);
 }
 
@@ -36,6 +35,7 @@ function displayCountries(countries) {
 toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
+
 // show and hide the filters (li tags)
 filterBtn.addEventListener('click', () => {
     filterBtn.classList.toggle('open');
