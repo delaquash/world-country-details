@@ -117,7 +117,7 @@ body.dark .btn-toggle .far {
     z-index: 99;
 }
 
-dropdown.open ul {
+.dropdown.open ul {
     display: block;
 }
 
